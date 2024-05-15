@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1 
+    center= title
+  form(action="/new", method="POST" class="form")
+    .inputContainer
+      label(for="name")
+        | Name: 
+        input(type="text" name="name")
+    .inputContainer
+      label(for="text") 
+        | Text: 
+        input(type="text" name="text")
+    button(class="blackBtn")= "Submit"

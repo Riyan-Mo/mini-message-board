@@ -1,5 +1,13 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  h1 
+    center= title
+  ul(class="messageContainer")
+    each val in messages
+     li(class="message")
+       p=val.user
+       h3=val.text 
+       p=val.added 
+  button(class="blackBtn") 
+    a(href="/new")= "New message"
