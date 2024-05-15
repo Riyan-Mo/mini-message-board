@@ -1,0 +1,1 @@
+Mini message board made as part of the odin project curriculum.
